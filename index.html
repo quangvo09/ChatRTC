@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Live Stream with WebRTC</title>
+    <script src="assets/libs/jquery.js"></script>
+    <script src="assets/libs/peer.js"></script>
+    <script src="assets/libs/socket.io.js"></script>
+</head>
+
+<body>
+    <div id='chat'>
+        <h2>Online user:</h2>
+        <ul id='ulUsers'>
+        </ul>
+        <div>
+            <h3 id='myPeer'>My Id: </h3>
+        </div>
+        <video id="localStream" width="300" controls></video>
+        <br /><br />
+        <video id="remoteStream" width="300" controls></video>
+        <br /><br />
+        <input type="text" id="remoteId" placeholder="Remote ID">
+        <button id='btnCall'>Call</button>
+        <br/> <br/>
+    </div>
+    <div id='signup'>
+        <input type="text" id="txtUsername" placeholder="Enter your name">
+        <button id='btnSignUp'>Sign Up</button>
+    </div>
+</body>
+<script src="assets/js/main.js"></script>
+
+</html>
